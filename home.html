@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy National Girlfriend Day 💖</title>
+  <style>
+    /* Basic styling */
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fce4ec;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      text-align: center;
+      /* Removed overflow: hidden to allow scrolling */
+    }
+
+    h1 {
+      color: #d6336c;
+      font-size: 3em;
+      margin-top: 50px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.3em;
+      max-width: 650px;
+      margin: 20px auto;
+      line-height: 1.8;
+      color: #333;
+      text-align: left;
+    }
+
+    .heart {
+      font-size: 4em;
+      color: #ff4d6d;
+      margin: 20px 0;
+      animation: heartbeat 1s infinite;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-style: italic;
+      color: #555;
+    }
+
+    /* Animation for heart */
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    /* Styling for particles */
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      background-color: #ff4d6d;
+      width: 10px;
+      height: 10px;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    /* Particle movement animation */
+    @keyframes float {
+      0% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+      50% {
+        transform: translate(100px, -100px);
+        opacity: 0.7;
+      }
+      100% {
+        transform: translate(-100px, 200px);
+        opacity: 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Happy National Girlfriend Day! 💖</h1>
+
+  <div class="heart">❤️</div>
+
+  <p>
+    Dear kak,<br><br>
+    Happy National Girlfriend Day! I just want to say how lucky I am to have you in my life. Seriously, you make everything better.
+
+    When we’re together, I feel happy no matter what we’re doing. Whether we’re going out or just sitting at home doing nothing, it’s always fun because you’re there. And let’s be real, you’re the only one who laughs at my bad jokes, so you deserve a prize for that.
+
+    You are not just my girlfriend. You’re my best friend, my partner, and the person who makes me smile every day. I am so happy to have you in my life, and I can’t imagine it without you.
+
+    Thank you for always being there for me, for supporting me, and for just being YOU. You make me want to be a better person. And honestly, I still don’t know how I convinced you to be with me, but I’m so glad you are.
+
+    I love you more than I can say. You make my life so much better, and I’m lucky to have you.
+
+    With all my love,<br>
+    
+  </p>
+
+  <div class="footer">
+    Forever yours. ❤️
+  </div>
+
+  <!-- Particle JavaScript to create floating particles -->
+  <script>
+    function createParticles() {
+      let particleCount = 50; // Adjust how many particles you want
+      for (let i = 0; i < particleCount; i++) {
+        let particle = document.createElement('div');
+        particle.classList.add('particle');
+        document.body.appendChild(particle);
+
+        let xPos = Math.random() * window.innerWidth;
+        let yPos = Math.random() * window.innerHeight;
+
+        particle.style.left = `${xPos}px`;
+        particle.style.top = `${yPos}px`;
+
+        let animationDuration = (Math.random() * 5 + 3) + 's';
+        let animationDelay = (Math.random() * 5) + 's';
+
+        particle.style.animationDuration = animationDuration;
+        particle.style.animationDelay = animationDelay;
+      }
+    }
+
+    window.onload = createParticles;
+  </script>
+
+</body>
+</html>
